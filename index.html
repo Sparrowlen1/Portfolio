@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sparrowlen's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
- 
 </head>
 <body>
   <div class="loader">
     <h1>Explore My Portfolio</h1>
   </div>
 
-  <!-- Navigation bar for sections of my portfolio -->
+  <!-- Navigation bar -->
   <header>
     <nav>
       <h1 class="logo">Sparrowlen's Portfolio</h1>
-      <ul>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="menu">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -28,7 +29,6 @@
     </nav>
   </header>
 
-  <!-- this is my home section -->
   <section id="home" class="section home">
     <div class="container">
       <img src="../images/profile.jpg" alt="Profile Photo" class="profile-img" />
@@ -37,11 +37,9 @@
     </div>
   </section>
 
-  <!-- this is my About section -->
   <section id="about" class="section about">
     <div class="container">
       <h2>About Me</h2>
-      <!-- Keeping tone personal and authentic -->
       <p>I am a computer science student passionate about building powerful, user-friendly web applications. I enjoy combining creativity with technology to bring ideas to life through code, design, and visuals.</p>
       <p>With a solid foundation in programming languages like Python, JavaScript, HTML, and CSS, I am always eager to learn new technologies and improve my skills. I love tackling challenges and finding innovative solutions to real-world problems.</p>
       <p>Currently, I am focused on web development, exploring AI and automation, and enhancing my skills in graphic design and videography. I believe in the power of technology to transform lives and am excited to contribute to projects that make a positive impact.</p>
@@ -50,21 +48,18 @@
     </div>
   </section>
 
-  <!-- this is my Education history and resume download section -->
   <section id="education" class="section education">
     <div class="container">
       <h2>Educational Background</h2>
       <p>I pursuing a Bachelor's degree in Computer Science from University of Embu. Waiting for graduation this year September</p>
       <p>Throughout my academic journey, I have gained a solid foundation in programming languages, web development, and software engineering principles. I have also been involved in various projects that have allowed me to apply my skills in real-world scenarios.</p>
-      <a href="cv.pdf" download class="btn">Download CV</a> <!-- provides direct downloadk -->
+      <a href="cv.pdf" download class="btn">Download CV</a>
     </div>
   </section>
 
-  <!--this are my technical skills -->
   <section id="skills" class="section skills">
     <div class="container">
       <h2>Skills</h2>
-      <!-- this is my grid layout for showcasing skills -->
       <div class="skills-grid">
         <span>Python</span>
         <span>JavaScript</span>
@@ -80,45 +75,41 @@
     </div>
   </section>
 
-  <!-- Personal interest and hobbies section -->
   <section id="interests" class="section interests">
     <div class="container">
       <h2>Interests</h2>
-     
       <ul>
         <li>Exploring modern web frameworks</li>
-        <li>passionate about videography</li>
-        <li>love doing graphic design for ui/ux design</li>
+        <li>Passionate about videography</li>
+        <li>Love doing graphic design for UI/UX design</li>
         <li>Learning AI and machine learning</li>
-        <li>sketch artist for portrait sketches</li>
+        <li>Sketch artist for portrait sketches</li>
       </ul>
     </div>
   </section>
 
-  <!-- Portfolio section showcasing my projects -->
   <section id="projects" class="section projects">
     <div class="container project-grid">
       <h2>Projects</h2>
-      <!-- Grid layout for projects -->
-    <div class="project">
+      <div class="project">
         <img src="../images/gaming.png" alt="Project 3" />
         <p>Online Gaming Platform Interface</p>
-        <a href="https://gaming-sp-sparrowlens-projects.vercel.app/" target="_blank">live demo</a>
+        <a href="https://gaming-sp-sparrowlens-projects.vercel.app/" target="_blank">Live Demo</a>
       </div>
       <div class="project">
         <img src="../images/jbl.png" alt="Project 4" />
-        <p>java blue lounge front end design</p>
-        <a href="https://jbl-sparrowlens-projects.vercel.app/" target="_blank">live demo</a>
+        <p>Java Blue Lounge Front-End Design</p>
+        <a href="https://jbl-sparrowlens-projects.vercel.app/" target="_blank">Live Demo</a>
       </div>
-    <div class="project">
+      <div class="project">
         <img src="../images/todo.png" alt="Project 1" />
-        <p>simple flask application where you can automate task done efficeintly </p>
-        <a href="https://to-do-list-flask-7mod.onrender.com/" target="_blank">live demo</a>
+        <p>Simple Flask Application for Task Automation</p>
+        <a href="https://to-do-list-flask-7mod.onrender.com/" target="_blank">Live Demo</a>
       </div>
-    <div class="project">
+      <div class="project">
         <img src="../images/portfolio.png" alt="Project 1" />
-        <p>persona portfolio where you can contack me for any projects or gigs</p>
-        <a href="https://portfolio-orpin-beta-53.vercel.app/" target="_blank">live demo</a>
+        <p>Personal Portfolio Website</p>
+        <a href="https://portfolio-orpin-beta-53.vercel.app/" target="_blank">Live Demo</a>
       </div>
       <div class="project">
         <img src="../images/face.png" alt="Project 1" />
@@ -133,17 +124,14 @@
     </div>
   </section>
 
-  <!-- Contact form using formsubmit.co for form handling -->
   <section id="contact" class="section contact">
     <div class="container">
       <h2>Contact Me</h2>
       <form action="https://formsubmit.co/dannymuthui118@gmail.com" method="POST" class="contact-form">
-        <!-- Basic contact details -->
         <input type="text" name="name" placeholder="Your Name in Full" required>
         <input type="email" name="email" placeholder="Your Email where you can be contacted from" required>
         <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        
-        <!-- Dropdown for type of service -->
+
         <select name="service" required>
           <option value="" disabled selected>Select a Service</option>
           <option value="Web Development">Web Development</option>
@@ -152,10 +140,8 @@
           <option value="Sketch Art">Sketch Art</option>
         </select>
 
-        <!-- User message area -->
         <textarea name="message" placeholder="Kindly provide details of the service" rows="5" required></textarea>
 
-        <!-- Disable CAPTCHA and redirect after submission -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
 
@@ -164,7 +150,6 @@
     </div>
   </section>
 
-  <!-- Sparrowlens footer -->
   <footer>
     <p>&copy; 2025 Sparrowlen. All rights reserved.</p>
   </footer>
